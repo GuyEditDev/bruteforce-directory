@@ -63,8 +63,8 @@ def bruteforce(url, timeout, dico):
         t2 = time.strftime("%A %d %B %Y")
         time.sleep(float(timeout))
         paths = "/"+path 
-        mdrrrr = url + paths
-        r = requests.get(mdrrrr)
+        goodurl = url + paths
+        r = requests.get(goodurl)
         goodornote = int(r.status_code)
         if goodornote == 200:
             
